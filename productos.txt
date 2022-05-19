@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Escuadra",
+    "price": "123.45",
+    "thumbnail": "URL de foto de producto",
+    "id": 1
+  },
+  {
+    "title": "Calculadora",
+    "price": "234.56",
+    "thumbnail": "URL de foto de producto",
+    "id": 2
+  },
+  {
+    "title": "gabinete",
+    "price": "245.30",
+    "thumbnail": "url de foto de producto",
+    "id": 5
+  }
+]
