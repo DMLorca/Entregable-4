@@ -62,8 +62,22 @@ class Contenedor{
     async deleteById(numberId){
         try {
             let dataObj = JSON.parse(await fs.promises.readFile(this.nombreArchivo));
-            dataObj.splice(numberId-1, 1);
-            await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(dataObj, null, 2));
+            let tam = dataObj.length;
+            let elimina = 0;
+            const dataObjId = dataObj.find(dataObj => dataObj.id === numberId);
+            if (dataObjId) {
+                for (let i = 0; i < tam; i++) {
+                    if (dataObj[i].id == numberId) {
+                        elimina = i;
+                        i = tam;
+                    }
+                }
+                dataObj.splice(elimina, 1);
+                await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(dataObj, null, 2));
+                return 1;
+            }else{
+                return null;
+            }
 
         } catch (error) {
             console.log(`Problema en deleteById(): ${error}`);

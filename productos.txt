@@ -1,20 +1,26 @@
 [
   {
-    "title": "Escuadra",
-    "price": "123.45",
-    "thumbnail": "URL de foto de producto",
+    "title": "calculadora",
+    "price": "312.6",
+    "thumbnail": "url de foto",
     "id": 1
   },
   {
-    "title": "Calculadora",
-    "price": "234.56",
-    "thumbnail": "URL de foto de producto",
+    "title": "gabinete",
+    "price": "252.6",
+    "thumbnail": "url de foto",
     "id": 2
   },
   {
-    "title": "gabinete",
-    "price": "245.30",
-    "thumbnail": "url de foto de producto",
-    "id": 5
+    "title": "monitor",
+    "price": "33.6",
+    "thumbnail": "url de foto",
+    "id": 3
+  },
+  {
+    "title": "mesa",
+    "price": "1245",
+    "thumbnail": "url de foto",
+    "id": 4
   }
 ]
